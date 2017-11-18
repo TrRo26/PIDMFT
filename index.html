@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PageIDMigrationFormattingTool</title>
+
+	<!-- JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+	<center><h1>PageIDMigrationFormattingTool</h1></center>
+
+	<div>
+		<label>OLD Merchant ID</label>
+		<input type="" class="old-mid">
+	</div>
+	<div>
+		<label>NEW Merchant ID</label>
+		<input type="textarea" class="new-mid">
+	</div>
+	<br>
+	<div>
+		<label>old page id,new page id,old variant,new variant</label><br>
+		<textarea class="old-data" rows="20" cols="50"></textarea>
+	</div>
+
+	<br>
+	<button type="submit" class="format-btn">Format</button>
+	<br>
+	<br>
+	<br>
+
+	<div>
+		<h2>RESULT</h2>
+		<p>(new merch ID, new page ID, new variant, old merch ID, old page ID, old variant, source UGC ID)</p>
+		<p>EX - 7324,205945,,7324,203900,, </p>
+	</div>
+	<textarea class="new-data" rows="20" cols="50"></textarea>
+
+	<script src="bundle.js"></script>
+<!-- 	<script type="text/javascript" src="./pidmft.js"></script> -->
+
+</body>
+</html>
+
+	<!-- 	<div>
+		<label>source UGC ID (optional)</label>
+		<input type="textarea" name="">
+	</div> -->
+	<!-- 	<label>OLD Page ID</label>
+		<input type="textarea" name="">
+		<label>NEW Page ID</label>
+		<input type="textarea" name=""> -->
+	<!-- 	<label>OLD Variant</label>
+		<input type="textarea" name="">
+
+		<label>NEW Variant</label>
+		<input type="textarea" name=""> -->

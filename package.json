@@ -1,0 +1,23 @@
+{
+  "name": "pidmft",
+  "version": "1.0.0",
+  "description": "Page ID Migration Formatting Tool - made by Travis Roy for PowerReviews",
+  "main": "pidmft.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrRo26/PIDMFT.git"
+  },
+  "author": "Travis Roy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrRo26/PIDMFT/issues"
+  },
+  "homepage": "https://github.com/TrRo26/PIDMFT#readme",
+  "dependencies": {
+    "babyparse": "^0.4.6",
+    "browserify": "^14.5.0"
+  }
+}
