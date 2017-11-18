@@ -1,0 +1,25 @@
+.header {
+	text-align: center;
+	padding: 20px;
+}
+.old-container, .plus-container, .new-container {
+	padding: 10px;
+}
+.old-container {
+
+}
+.plus-container {
+
+}
+.new-container {
+
+}
+.plus {
+	padding-top: 140px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 40px;
+}
+.UGC-ID {
+	color: darkgoldenrod;
+}
