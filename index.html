@@ -8,7 +8,7 @@
 	<!-- JQUERY -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<!-- BOOTSTRAP -->
- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  	<link rel="stylesheet" href="./custom.css">
 </head>
 
@@ -24,38 +24,48 @@
 			
 			<div class="col-md-4">
 				<div class="old-container">
-					<h3>Old Format</h3>
-					<label>old page id,new page id,old variant,new variant</label><br>
+					<h3 class="title">Old Format</h3>
+					<p class="descriptor">[ old page id,new page id,old variant,new variant ]</p>
 					<textarea class="old-data" rows="20" cols="45"></textarea>
+					<div class="lil-button-container">
+						<button type="button" class="lil-button">clear</button>
+					</div>
 				</div>
 			</div>
 
 			<div class="col-md-4">
 				<div class="plus-container">
 					<h3 class="plus">+</h3>
-					<div>
-						<label>OLD Merchant ID</label>
-						<input type="" class="old-mid">
+					<div class="row">
+
+						<div class="col-md-6">
+							<p class="plus-label">OLD Merchant ID</p>
+							<p class="plus-label">NEW Merchant ID</p>
+							<p class="plus-label ugc-id">Source UGC ID</p>
+						</div>
+
+						<div class="col-md-6">
+							<input class="old-mid inpt">
+							<input class="new-mid inpt">
+							<input class="src-ugc inpt">
+						</div>
+
 					</div>
-					<div>
-						<label>NEW Merchant ID</label>
-						<input type="textarea" class="new-mid">
+					<div class="the-button-container">
+						<button type="button" class="btn btn-primary btn-lg format-btn"> -------> </button>
 					</div>
-					<div class="UGC-ID">
-						<label>source UGC ID (optional)</label>
-						<input type="textarea" name="">
-					</div>
-					<button type="button" class="btn btn-primary btn-lg"> -------> </button>
 				</div>
 			</div>
 
 			<div class="col-md-4">
 				<div class="new-container">
-					<h3>New Format</h3>
-					<p>(new merch ID, new page ID, new variant, old merch ID, old page ID, old variant, source UGC ID)</p>
-					<p>EX - 7324,205945,,7324,203900,, </p>
+					<h3 class="title">New Format</h3>
+					<p class="descriptor">[ new mid,new pid,new var,old mid,old pid,old var,src ugc ]</p>
+					<textarea class="new-data" rows="20" cols="45"></textarea>
+					<div class="lil-button-container">
+						<button type="button" class="lil-button">clear</button>
+					</div>
 				</div>
-				<textarea class="new-data" rows="20" cols="45"></textarea>
 			</div>
 
 		</div>
