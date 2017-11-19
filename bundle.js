@@ -919,6 +919,9 @@ $('.lil-one').on('click', function() {
 
 $('.lil-two').on('click', function() {
 	$('.new-data').val("")
+	$('.old-mid').val("")
+	$('.new-mid').val("")
+	$('.src-ugc').val("")
 })
 
 function reFormat(parsedData, oldMID, newMID, srcUGC) {
