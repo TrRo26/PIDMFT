@@ -13,6 +13,7 @@
 }
 .old-data {
 	background-color: floralwhite;
+	border-radius: 3px;
 }
 /*--------------------------*/
 .plus-container {
@@ -38,6 +39,7 @@
 }
 .new-data {
 	background-color: floralwhite;
+	border-radius: 3px;
 }
 /*--------------------------*/
 .title {
