@@ -2,24 +2,69 @@
 	text-align: center;
 	padding: 20px;
 }
+/*--------------------------*/
 .old-container, .plus-container, .new-container {
 	padding: 10px;
 }
+/*--------------------------*/
 .old-container {
-
 }
+.old-data {
+	/*position: absolute;*/
+	top: 150px;
+}
+/*--------------------------*/
 .plus-container {
-
-}
-.new-container {
-
 }
 .plus {
-	padding-top: 140px;
+	padding-top: 130px;
 	padding-bottom: 50px;
 	text-align: center;
 	font-size: 40px;
 }
-.UGC-ID {
+.plus-label {
+	left: 15px;
+	letter-spacing: 1.5px;
+}
+.inpt {
+	padding: 1.5px;
+}
+.ugc-id {
 	color: darkgoldenrod;
+}
+/*--------------------------*/
+.new-container {
+}
+.new-data {
+	/*position: absolute;*/
+	top: 150px;
+}
+/*--------------------------*/
+.title {
+	padding-top: 6px;
+	padding-bottom: 12px;
+}
+.descriptor {
+	font-size: 13px;
+}
+.the-button-container {
+	padding-top: 50px;
+	text-align: center;
+}
+.format-btn {
+	transition: background 0.8s ease;
+	background: darkolivegreen;
+	border: none;
+}
+.format-btn:hover {
+	transition: background 0.8s ease;
+	background: darkkhaki;
+}
+.lil-button-container {
+	padding-top: 10px;
+	text-align: center;
+}
+.lil-button {
+	width: 100px;
+	background: none;
 }

@@ -888,22 +888,25 @@ var Baby = require('babyparse')
 // browserify pidmft.js > bundle.js
 
 $('.format-btn').on('click', function() {
+	var oldData = $('.old-data').val().trim()
 	var oldMID = $('.old-mid').val().trim()
 	var newMID = $('.new-mid').val().trim()
-	var oldData = $('.old-data').val()
+	var srcUGC = $('.src-ugc').val().trim()
+	console.log(oldData)
 	console.log(oldMID)
 	console.log(newMID)
-	console.log(oldData)
+	console.log(srcUGC)
+	
 	console.log("---------------------")
 
 	parsed = (Baby.parse(oldData)).data;
-	convertedData = reFormat(parsed, oldMID, newMID)
+	convertedData = reFormat(parsed, oldMID, newMID, srcUGC)
 
 	prettyPrint(convertedData)
 
 })
 
-function reFormat(parsedData, oldMID, newMID) {
+function reFormat(parsedData, oldMID, newMID, srcUGC) {
 	var convertedArr = []
 	for (i=0; i<parsedData.length; i++) {
 		var oldPID = parsedData[i][0]
@@ -912,7 +915,7 @@ function reFormat(parsedData, oldMID, newMID) {
 		var newVAR = parsedData[i][3]
 
 		var lineResult = newMID + "," + newPID + "," + newVAR + "," +
-										 oldMID + "," + oldPID + "," + oldVAR + ","
+										 oldMID + "," + oldPID + "," + oldVAR + "," + srcUGC
 
 		convertedArr.push(lineResult)
 	}
