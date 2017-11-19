@@ -884,10 +884,6 @@
 })(typeof window !== 'undefined' ? window : this);
 
 },{"fs":1}],3:[function(require,module,exports){
-// verification - no null - no spaces
-// fix submition after clear problem
-// add user conditional formating
-
 var Baby = require('babyparse')
 // browserify pidmft.js > bundle.js
 
@@ -912,9 +908,6 @@ $('.format-btn').on('click', function() {
 
 $('.lil-one').on('click', function() {
 	$('.old-data').val("")
-	$('.old-mid').val("")
-	$('.new-mid').val("")
-	$('.src-ugc').val("")
 })
 
 $('.lil-two').on('click', function() {
