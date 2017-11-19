@@ -1,6 +1,8 @@
 .header {
 	text-align: center;
 	padding: 20px;
+	color: darkred;
+	letter-spacing: 1.5px;
 }
 /*--------------------------*/
 .old-container, .plus-container, .new-container {
@@ -10,8 +12,7 @@
 .old-container {
 }
 .old-data {
-	/*position: absolute;*/
-	top: 150px;
+	background-color: floralwhite;
 }
 /*--------------------------*/
 .plus-container {
@@ -36,8 +37,7 @@
 .new-container {
 }
 .new-data {
-	/*position: absolute;*/
-	top: 150px;
+	background-color: floralwhite;
 }
 /*--------------------------*/
 .title {
@@ -53,12 +53,12 @@
 }
 .format-btn {
 	transition: background 0.8s ease;
-	background: darkolivegreen;
+	background: darkred;
 	border: none;
 }
 .format-btn:hover {
 	transition: background 0.8s ease;
-	background: darkkhaki;
+	background: darkolivegreen;
 }
 .lil-button-container {
 	padding-top: 10px;
@@ -67,4 +67,12 @@
 .lil-button {
 	width: 100px;
 	background: none;
+	border: 1px solid darkred;
+}
+.lil-button:hover {
+	transition: background 0.8s ease;
+	transition: color 0.8s ease;
+	background: darkolivegreen;
+	color: white;
+	border: none;
 }
