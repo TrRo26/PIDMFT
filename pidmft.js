@@ -1,5 +1,4 @@
 // verification - no null - no spaces
-// fix submition after clear problem
 // add user conditional formating
 
 var Baby = require('babyparse')
@@ -19,7 +18,6 @@ $('.format-btn').on('click', function() {
 
 	parsed = (Baby.parse(oldData)).data;
 	convertedData = reFormat(parsed, oldMID, newMID, srcUGC)
-
 	prettyPrint(convertedData)
 
 })
@@ -39,19 +37,15 @@ function reFormat(parsedData, oldMID, newMID, srcUGC) {
 		var newPID = parsedData[i][1]
 		var oldVAR = parsedData[i][2]
 		var newVAR = parsedData[i][3]
-
 		var lineResult = newMID + "," + newPID + "," + newVAR + "," +
 										 oldMID + "," + oldPID + "," + oldVAR + "," + srcUGC
-
 		convertedArr.push(lineResult)
 	}
 	return convertedArr
 }
 
 function prettyPrint(array) {
-	console.log("pp 1?")
 	for (i=0; i<array.length; i++) {
-		$('.new-data').append(array[i] + "\n")
-		console.log("pp 2?")
+		$('.new-data').val($('.new-data').val() + array[i] + "\n")
 	}
 }

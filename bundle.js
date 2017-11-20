@@ -896,15 +896,17 @@ $('.format-btn').on('click', function() {
 	var oldMID = $('.old-mid').val().trim()
 	var newMID = $('.new-mid').val().trim()
 	var srcUGC = $('.src-ugc').val().trim()
+
 	console.log(oldData)
 	console.log(oldMID)
 	console.log(newMID)
 	console.log(srcUGC)
-	
 	console.log("---------------------")
 
 	parsed = (Baby.parse(oldData)).data;
+
 	convertedData = reFormat(parsed, oldMID, newMID, srcUGC)
+
 
 	prettyPrint(convertedData)
 
@@ -912,16 +914,10 @@ $('.format-btn').on('click', function() {
 
 $('.lil-one').on('click', function() {
 	$('.old-data').val("")
-	$('.old-mid').val("")
-	$('.new-mid').val("")
-	$('.src-ugc').val("")
 })
 
 $('.lil-two').on('click', function() {
 	$('.new-data').val("")
-	$('.old-mid').val("")
-	$('.new-mid').val("")
-	$('.src-ugc').val("")
 })
 
 function reFormat(parsedData, oldMID, newMID, srcUGC) {
@@ -942,8 +938,11 @@ function reFormat(parsedData, oldMID, newMID, srcUGC) {
 
 function prettyPrint(array) {
 	for (i=0; i<array.length; i++) {
-		$('.new-data').append(array[i] + "\n")
+		// $('.new-data').append(array[i] + "\n")
+		$('.new-data').val($('.new-data').val() + array[i] + "\n")
 	}
 }
+
+// box.val(box.val() + txt);
 
 },{"babyparse":2}]},{},[3]);
